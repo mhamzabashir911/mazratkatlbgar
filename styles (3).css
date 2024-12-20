@@ -1,0 +1,63 @@
+/* General layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(189, 225, 122); /* Light green background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container holding content */
+.container {
+    text-align: center;
+    position: relative;
+}
+
+/* Styling for the text headers */
+.header_text {
+    color: #2b2b2b;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+/* Styling for the GIF container */
+.gif_container img {
+    width: 100%;
+    max-width: 400px; /* Ensure it's responsive */
+}
+
+/* Button styles */
+.btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* The "No" button's position behavior */
+#noButton {
+    position: absolute;
+    transition: 0.5s;
+}
+
+/* Styling for the buttons container */
+.buttons {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hiding the 'no' button if it's far away (Optional, can remove) */
+#noButton {
+    transition: transform 0.5s ease-out;
+}
